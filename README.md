@@ -1,4 +1,25 @@
-= false NpcTpFrame.Visible = true
+
+NpcTp.Name = "NpcTp"
+NpcTp.Parent = ScriptsFrame
+NpcTp.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+NpcTp.Position = UDim2.new(0.0476484038, 0, 0.224251434, 0)
+NpcTp.Size = UDim2.new(0, 100, 0, 31)
+NpcTp.Font = Enum.Font.SourceSansLight
+NpcTp.Text = "TpNpc"
+NpcTp.TextColor3 = Color3.new(0.811765, 0.811765, 0.811765)
+NpcTp.TextSize = 14
+NpcTp.MouseButton1Click:connect(function()
+    if NpcTpFrame.Visible == true then wait(.10)
+                NpcTpFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true)
+                wait(1) NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif WeaponTpFrame.Visible == true then wait(.10)
+        WeaponTpFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) WeaponTpFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif HomeFrame.Visible == true then
+        HomeFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) HomeFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif IslandTpFrame.Visible == true then
+        IslandTpFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) IslandTpFrame.Visible = false NpcTpFrame.Visible = true
         NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
     elseif OtherScriptsFrame.Visible == true then
         OtherScriptsFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) OtherScriptsFrame.Visible = false NpcTpFrame.Visible = true
