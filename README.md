@@ -1,3 +1,23 @@
+= false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif OtherScriptsFrame.Visible == true then
+        OtherScriptsFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) OtherScriptsFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif QuestTpFrame.Visible == true then
+        QuestTpFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) QuestTpFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif OtherTpFrame.Visible == true then
+        OtherTpFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) OtherScriptsFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif TpPlayerFrame.Visible == true then
+        TpPlayerFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) TpPlayerFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    elseif SettingsFrame.Visible == true then
+        SettingsFrame:TweenSize(UDim2.new(0, 7,0, 269),"In","Sine",1,true) wait(1) SettingsFrame.Visible = false NpcTpFrame.Visible = true
+        NpcTpFrame:TweenSize(UDim2.new(0, 191,0, 269),"In","Sine",1,true)
+    end
+end)
+
 NpcTpFrame.Name = "NpcTpFrame"
 NpcTpFrame.Parent = NpcTp
 NpcTpFrame.BackgroundColor3 = Color3.new(0.0235294, 0.0235294, 0.0235294)
